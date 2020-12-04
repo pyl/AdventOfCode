@@ -1,7 +1,11 @@
 import os
 import re
+# from .m.red import readInput
 
-data = open(os.getcwd() + "\\AdventOfCode\\2\\input.txt").read().split('\n')
+data = open("2\\input.txt").read().split('\n')
+
+
+
 
 parsedData = []
 
