@@ -1,4 +1,5 @@
-data = open("3\\input.txt").read().split('\n')
+with open("3/input.txt","r") as input:
+    data = input.read().split("\n")
 data.pop()
 WIDTH = len(data[0])
 def thing(right, down):
@@ -12,3 +13,5 @@ def thing(right, down):
             col += right
     return counter
 print(thing(1,1)*thing(3,1)*thing(5,1)*thing(7,1)*thing(1,2))
+
+
