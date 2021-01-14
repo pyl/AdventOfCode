@@ -1,12 +1,7 @@
 import re
-
 with open("4/input.txt","r") as input:
     data = input.read().split("\n\n")
-
-
-
 def validate(field, value):
-    
     if field == 'byr':
         if int(value) >= 1920 and int(value) <= 2002:
             print("1", field, value)
@@ -48,10 +43,6 @@ def validate(field, value):
             return True
     print("Fails", field, value)
     return False
-
-
-
-
 myset = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}
 counter = 0
 for x in data:
@@ -68,5 +59,3 @@ for x in data:
         counter+=1
 #     print(numOfValid)
 print(counter)
-
-    
